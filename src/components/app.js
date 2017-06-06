@@ -1,5 +1,8 @@
-angular.module('video-player')
-
+angular.module('video-player').controller('ListCtrl', function ListCtrl() {
+  this.videos = {
+    data: window.exampleVideoData
+  };
+})
 .component('app', {
-  // TODO
+  templateUrl: './src/templates/app.html'
 });
